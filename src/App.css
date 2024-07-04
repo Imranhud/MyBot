@@ -1,0 +1,6 @@
+.costume-before::before{
+    content: ("+10");
+    font-size: larger;
+    font-weight: 600;
+    display: block;
+}
