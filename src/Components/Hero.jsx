@@ -37,7 +37,7 @@ const Hero = () => {
     let bln = parseFloat(balance)
 
     const [num, setNum] = useState(3460000);
-    const [numR, setNumR] = useState(140);
+    const [numR, setNumR] = useState(60);
     const [isRo, setIsRo] = useState(false)
     const [isC, setC] = useState(0)
     const [isV, setIsV] = useState(false)
