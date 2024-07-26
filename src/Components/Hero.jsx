@@ -67,9 +67,9 @@ return(
     <div>
         <div>
             <div className="h-[20vh] flex justify-center">
-                <div className='from-slate-600 to-slate-200 bg-gradient-to-l opacity-90 px-4 py-7 leading-8 my-6 mx-7 flex items-center justify-center flex-col border-dimBlue rounded-[20px] md:max-w-[345px] w-full'>
+                <div className='from-slate-600 to-violet-700 bg-gradient-to-l opacity-90 px-4 py-7 leading-8 my-6 mx-7 flex items-center justify-center flex-col border-dimBlue rounded-[20px] md:max-w-[345px] w-full'>
                     <p className='text-dimWhite font-semibold'>Your IMXP Tokens</p>
-                    <h1 className='text-orange-50 font-poppins text-[29px]'> {num} <span className='text-purple-800'>IMXP</span></h1>
+                    <h1 className='text-orange-50 font-poppins text-[29px]'> {num} <span className='text-black'>IMXP</span></h1>
                 </div>
 
             </div>
@@ -78,10 +78,10 @@ return(
                 Tap, tap,tap! Can't stop, won't stop! <br /> Timer shows refill, but the fun won't flop!.
             </p>
             <div className='flex mt-2 h-[12vh] items-start justify-evenly font-poppins'>
-                <button className='text-white cursor-default text-[20px] border-dimBlue rounded-xl from-slate-600 to-slate-200 bg-gradient-to-r py-3 px-5'>
+                <button className='text-white  cursor-default text-[20px] border-dimBlue rounded-xl from-slate-600 to-violet-700 bg-gradient-to-l py-3 px-5'>
                    {numR} taps <span className='text-dimWhite'>left</span></button>
-                <button className='border-dimBlue cursor-default text-[20px] text-white drop-shadow-lg rounded-xl from-slate-600 to-slate-200 bg-gradient-to-l py-3 px-5'>
-                   {dd} <span className='text-dimWhite'>left</span></button>
+                <button className='border-dimBlue cursor-default text-[20px] text-white drop-shadow-lg rounded-xl from-slate-600 to-violet-700 bg-gradient-to-l py-3 px-5'>
+                   {dd} <span className='text-dimWhite'></span></button>
             </div>
             <div className='flex h-[25vh] items-start cursor-pointer justify-center my-8'>
                 <div onClick={handleNumChange} className={`flex transform ${ isRo ? "border-2 shadow-lg shadow-red-400 border-dimBlue translate-x-4 transition duration-30 bg-slate-400" : "translate-x-2 transition border-x-2 shadow-xl duration-20" } items-center justify-center 
