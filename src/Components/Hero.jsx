@@ -68,8 +68,8 @@ return(
         <div>
             <div className="h-[20vh] flex justify-center">
                 <div className='from-slate-600 to-slate-200 bg-gradient-to-l opacity-90 px-4 py-7 leading-8 my-6 mx-7 flex items-center justify-center flex-col border-dimBlue rounded-[20px] md:max-w-[345px] w-full'>
-                    <p className='text-dimWhite font-semibold'>Your IMRAN'S Tokens</p>
-                    <h1 className='text-orange-50 font-poppins text-[29px]'> {num} <span className='text-red-200'>IMXP</span></h1>
+                    <p className='text-dimWhite font-semibold'>Your IMXP Tokens</p>
+                    <h1 className='text-orange-50 font-poppins text-[29px]'> {num} <span className='text-purple-800'>IMXP</span></h1>
                 </div>
 
             </div>
@@ -85,8 +85,8 @@ return(
             </div>
             <div className='flex h-[25vh] items-start cursor-pointer justify-center my-8'>
                 <div onClick={handleNumChange} className={`flex transform ${ isRo ? "border-2 shadow-lg shadow-red-400 border-dimBlue translate-x-4 transition duration-30 bg-slate-400" : "translate-x-2 transition border-x-2 shadow-xl duration-20" } items-center justify-center 
-                ${isV ? 'custom-before' : !'custom-before' } to-violet-600 from-violet-300 bg-gradient-to-tr rounded-full w-[180px] h-[180px] *:`}>
-                    <span className='focus:bg-inherit active:bg-inherit focus:outline-none aria-disabled:bg-inherit text-white hover:bg-inherit'>Tap me</span>
+                ${isV ? 'custom-before' : !'custom-before' } to-violet-600 from-violet-300 bg-gradient-to-tr rounded-full w-[180px] h-[180px]`}>
+                    <span className='focus:bg-inherit active:bg-inherit focus:outline-none aria-disabled:bg-inherit text-white'>Tap me</span>
                     </div>
             </div>
             <div className='flex h-[16vh] items-start justify-center'>
