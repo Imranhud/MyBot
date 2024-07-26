@@ -8,7 +8,7 @@ import "./App.css"
 
 
 const App = () => {
- 
+  
   return (
     <div className="bg-gradient-to-l from-dimBlue to-slate-500 max-w-[490px] rounded-[5px] h-[100vh] my-0 mx-auto sm:max-w-[450px] xl:max-w-[1280px] lg:w-full overflow-hidden">
       <Hero />

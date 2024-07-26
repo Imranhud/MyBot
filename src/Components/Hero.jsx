@@ -37,7 +37,7 @@ const Hero = () => {
     let bln = parseFloat(balance)
 
     const [num, setNum] = useState(3460000);
-    const [numR, setNumR] = useState(60);
+    const [numR, setNumR] = useState(70);
     const [isRo, setIsRo] = useState(false)
     const [isC, setC] = useState(0)
     const [isV, setIsV] = useState(false)
@@ -67,7 +67,7 @@ return(
     <div>
         <div>
             <div className='from-slate-600 to-slate-200 bg-gradient-to-l opacity-90 px-4 py-7 leading-8 my-6 mx-7 flex items-center justify-center flex-col border-dimBlue rounded-[20px] md:max-w-[345px]'>
-                <p className='text-dimWhite font-semibold'>Your IMXP Tokenss</p>
+                <p className='text-dimWhite font-semibold'>Your IMRAN'S Tokens</p>
                 <h1 className='text-orange-50 font-poppins text-[29px]'> {num} <span className='text-red-200'>IMXP</span></h1>
             </div>
             
