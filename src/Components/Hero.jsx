@@ -116,8 +116,8 @@ return(
                 <button className='text-white  cursor-default text-[20px] border-dimBlue rounded-xl from-slate-600 to-violet-700 bg-gradient-to-l py-3 px-5'>
                     {`${ho}:${mi}:${se}`}
                    </button>
-                <button className='border-dimBlue cursor-default text-[20px] text-white drop-shadow-lg rounded-xl from-slate-600 to-violet-700 bg-gradient-to-l py-3 px-5'>
-                   {FormatTime()} <span className='text-dimWhite'></span></button>
+                {/* <button className='border-dimBlue cursor-default text-[20px] text-white drop-shadow-lg rounded-xl from-slate-600 to-violet-700 bg-gradient-to-l py-3 px-5'>
+                   {FormatTime()} <span className='text-dimWhite'></span></button> */}
             </div>
             <div className='flex cursor-pointer justify-center my-2'>
                 
