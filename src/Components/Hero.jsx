@@ -28,7 +28,7 @@ const myFooters = [
 const Hero = () => {
    
     const [num, setNum] = useState(3460000);
-    const [numR, setNumR] = useState(712);
+    const [numR, setNumR] = useState(71);
     const [isRo, setIsRo] = useState(false)
     const [isC, setC] = useState(0)
     const [isV, setIsV] = useState(false)
@@ -36,7 +36,28 @@ const Hero = () => {
     const [ho, setHo] = useState(4)
     const [mi, setMi] = useState(59)
     const [se, setSe] = useState(50)
+    const [claimT, setClaimT] = useState(28800)
+    const [isClaim, setIsClaim] = useState(false)
+
     
+// useEffect(() => {
+//   let interval;
+//   if (!isClaim) {
+//     interval = setInterval(() => {
+//         setClaimT((pt) => pt - 1)
+//         if (pt <= 0 ) {
+//             setIsClaim(true)
+//         }
+//     }, 1000);
+//   } else {
+//     setClaimT(28800)
+//     setIsClaim(false)
+//   }
+
+//   return () => {
+//     second
+//   }
+// }, [third])
 
     
 
@@ -66,7 +87,7 @@ useEffect(() => {
         setTime(new Date);
         setMi( pm => se <= 0 ? mi - 1 : mi)
 
-        setSe( ps => ps >= 0 ? ps -1 : ps )
+        setSe( ps => ps >= 1 ? ps -1 : ps )
 
     }, 1000);
 
@@ -82,9 +103,12 @@ function FormatTime() {
     const seconds = time.getSeconds();
     const meridium = time >= 12 ? "PM" : "AM" ;
 
+    let mHo = padZero( hours )  
+
     hours = hours % 12 || 12 ;
+
     
-    return `${padZero(hours)}:${padZero(minutes)}:${padZero(seconds)}`
+    return `${mHo}:${ padZero(60 - minutes)}:${padZero(60 - seconds)}`
 }
 
 function padZero(number){
@@ -113,17 +137,17 @@ return(
             <div className='flex mt-2 h-[12vh] items-start justify-evenly font-poppins'>
                 <button className='text-white  cursor-default text-[20px] border-dimBlue rounded-xl from-slate-600 to-violet-700 bg-gradient-to-l py-3 px-5'>
                    {numR} taps <span className='text-dimWhite'>left</span></button>
-                <button className='text-white  cursor-default text-[20px] border-dimBlue rounded-xl from-slate-600 to-violet-700 bg-gradient-to-l py-3 px-5'>
+                {/* <button className='text-white px-9 cursor-default text-[20px] border-dimBlue rounded-xl from-slate-600 to-violet-700 bg-gradient-to-l py-3'>
                     {`${ho}:${mi}:${se}`}
-                   </button>
-                {/* <button className='border-dimBlue cursor-default text-[20px] text-white drop-shadow-lg rounded-xl from-slate-600 to-violet-700 bg-gradient-to-l py-3 px-5'>
-                   {FormatTime()} <span className='text-dimWhite'></span></button> */}
+                   </button> */}
+                <button className='border-dimBlue cursor-default text-[20px] text-white drop-shadow-lg rounded-xl from-slate-600 to-violet-700 bg-gradient-to-l py-3 px-5'>
+                   {FormatTime()} <span className='text-dimWhite'></span></button>
             </div>
             <div className='flex cursor-pointer justify-center my-2'>
                 
-                    <img src={ton} onClick={handleNumChange} className={`flex transform ${ isRo ? "border-2 shadow-lg shadow-red-400 border-dimBlue translate-x-4 transition duration-30 bg-dimWhite" : "translate-x-2 transition border-x-2 shadow-xl duration-20" } items-center justify-center 
+                     <img src={ton} onClick={handleNumChange} className={`flex transform ${ isRo ? "border-2 shadow-lg shadow-red-400 border-dimBlue translate-x-4 transition duration-30 bg-dimWhite" : "translate-x-2 transition border-x-2 shadow-xl duration-20" } items-center justify-center 
                 ${isV ? 'custom-before' : !'custom-before' } rounded-full`} alt="" />
-                
+
             </div>
             <div className='flex h-[16vh] items-start justify-center'>
                 <button onClick={handleClaimChange} className='w-[199px] my-4 text-dimWhite from-slate-600 to-violet-700 bg-gradient-to-l rounded-xl bg-slate-600 p-3 '>
